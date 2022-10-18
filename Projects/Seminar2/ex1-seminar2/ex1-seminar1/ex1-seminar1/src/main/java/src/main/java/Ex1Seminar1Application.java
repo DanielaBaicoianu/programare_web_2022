@@ -21,7 +21,7 @@ public class Ex1Seminar1Application {
 		System.out.println(pet.getName() + ", age: " + pet.getAge());
 
 		Person person2 = context.getBean("person2", Person.class);
-		System.out.println(person2.getName());
+		System.out.println(person2.toString());
 
 	}
 
