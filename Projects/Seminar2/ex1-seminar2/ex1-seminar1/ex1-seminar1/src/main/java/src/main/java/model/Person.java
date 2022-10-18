@@ -21,4 +21,12 @@ public class Person {
     public Pet getPet() {
         return pet;
     }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", pet=" + pet.toString() +
+                '}';
+    }
 }
