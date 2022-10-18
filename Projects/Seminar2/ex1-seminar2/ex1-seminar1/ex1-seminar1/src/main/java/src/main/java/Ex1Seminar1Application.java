@@ -20,6 +20,9 @@ public class Ex1Seminar1Application {
 		Pet pet = context.getBean("pet1", Pet.class);
 		System.out.println(pet.getName() + ", age: " + pet.getAge());
 
+		Person person2 = context.getBean("person2", Person.class);
+		System.out.println(person2.getName());
+
 	}
 
 }
