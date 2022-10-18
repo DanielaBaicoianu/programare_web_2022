@@ -8,14 +8,14 @@ import org.springframework.stereotype.Component;
 public class Person {
 
     private String name;
+    
+    @Autowired
+    @Qualifier("bird")
+    private Pet pet;
 
     public Person(String name){
         this.name = name;
     }
-
-    @Autowired
-    @Qualifier("bird")
-    private Pet pet;
 
     public void setName(String name) {
         this.name = name;
@@ -28,7 +28,6 @@ public class Person {
     public Pet getPet() {
         return pet;
     }
-
 
     @Override
     public String toString() {
