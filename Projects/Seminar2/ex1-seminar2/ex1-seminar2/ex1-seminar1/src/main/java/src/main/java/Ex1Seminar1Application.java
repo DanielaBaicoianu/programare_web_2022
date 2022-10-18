@@ -1,7 +1,6 @@
 package src.main.java;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import src.main.java.configuration.ProjectConfiguration;
 import src.main.java.model.Person;
