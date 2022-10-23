@@ -1,2 +1,1 @@
-Programare web
-Cerinte proiect:
+Programare web 2022
