@@ -38,7 +38,7 @@ public class Application {
 		else
 			System.out.println("Prototype");
 
-		car1.setModel("Ana");
+		car1.setModel("Ford");
 		System.out.println("After setting car 1 model: ");
 
 		try {
