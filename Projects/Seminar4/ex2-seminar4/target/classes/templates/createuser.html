@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymleaf.org"  xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Create</title>
+</head>
+<body>
+<h3>form to create user</h3>
+<form action="#" th:action="@{/create}" th:object="${user}" method="post">
+    <label for="username">Username</label>
+    <input type="text" th:field="*{username}" id="username">
+    <label for="email">Email</label>
+    <input type="email" th:field="*{email}" id="email">
+    <input type="submit" value="Add user">
+</form>
+
+</body>
+</html>
