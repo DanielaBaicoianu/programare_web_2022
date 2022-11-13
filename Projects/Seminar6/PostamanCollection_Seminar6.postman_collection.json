@@ -1,0 +1,139 @@
+{
+	"info": {
+		"_postman_id": "d1aca76a-bd23-41ec-bc25-f905ef7db01e",
+		"name": "PostamanCollection_Seminar6",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8585/users/getUsers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8585/users/getUsers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8585",
+					"path": [
+						"users",
+						"getUsers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8585/users/addUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"ana123\",\r\n    \"email\" : \"ana.maria@test.eu\",\r\n    \"info\" : \"some info\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8585/users/addUser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8585",
+					"path": [
+						"users",
+						"addUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8585/users/delete/ana123",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8585/users/delete/ana123",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8585",
+					"path": [
+						"users",
+						"delete",
+						"ana123"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8585/users/edit/ana123",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"anamaria123\",\r\n    \"email\" : \"anamaria@test.ro\",\r\n    \"info\" : \"some info extra\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8585/users/edit/ana123",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8585",
+					"path": [
+						"users",
+						"edit",
+						"ana123"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8585/users/editPartial/user2",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"maria\",\r\n    \"info\" : \"new info for user2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8585/users/editPartial/user2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8585",
+					"path": [
+						"users",
+						"editPartial",
+						"user2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
